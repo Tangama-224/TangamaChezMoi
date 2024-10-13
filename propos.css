@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.propros {
+    max-width:900px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.propros h1, .propros  h2 {
+    color: #333;
+}
+
+.propros  p, .propros  ul {
+    color: #666;
+}
+
+.propros  ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.propros  ul li {
+    background: #e7e7e7;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.pied {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cbcdd1;
+    margin-top: 20px;
+    color: black
+}
+
+footer p {
+    margin: 5px 0;
+}

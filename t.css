@@ -1,0 +1,119 @@
+.populaires {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.destination {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.populaires a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 234px;
+}
+
+.populaires a:hover {
+    transform: scale(1.05);
+}
+
+.populaires img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+.populaires span {
+    display: block;
+    background-color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d8d8d8;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.description, .tarifs, .contact, .gallery, footer {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery .images img {
+    border-radius: 8px;
+    width: 48.9%;
+
+}
+.gallery .images :hover {
+    transform: scale(1.35);
+}
+
+@media (max-width: 400px) {
+    .populaires a:hover {
+        transform: scale(0.95);
+    }
+}
+
+
+.pied {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cbcdd1;
+    margin-top: 20px;
+    color: black
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .gallery .images img {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .images img {
+        width: 100%; 
+    }
+
+    .navigation li {
+        display: block; 
+        margin: 5px 0;
+    }
+}

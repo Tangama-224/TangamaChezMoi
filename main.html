@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangama Chez Toi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="/Icons/logo-png.png">   
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+<body> 
+    <header>
+        <nav class="navigation"> 
+            <ul>
+                <li id="logo"><a href="main.html">TangamaChezToi.com™</a></li>
+                <li><a href="main.html"> <i class="fas fa-home"></i>  Accueil</a></li>
+                <li><a href="hebergement.html"><i class="fas fa-bed"></i>  Hébergements</a></li>
+                <li><a href="propos.html"><i class="fas fa-info-circle"></i>  A propos</a></li>
+                <li><a href="formulaire.html">   <i class="fas fa-phone"></i>  Contact</a></li>
+                <li ><a href="compte.html" ><i class="fas fa fa-id-badge" id="badge"></i>  Mon compte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <h1 >Visitez, <span>louez</span>,<br>depuis chez
+            vous</h1>  
+        <div class="barre_recherche">
+            <form action="/search" method="get">
+                <div class="entrer">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Où allez-vous ?" required>
+                </div>
+                <div class="entrer">
+                    <label for="arrive">Date d'arrivée</label>
+                    <input type="date" id="arrive" name="arrive" required>
+                </div>
+                <div class="entrer">
+                    <label for="depart">Date de départ</label>
+                    <input type="date" id="depart" name="depart" required>
+                </div>
+                <div class="entrer">
+                    <label for="voyageurs">Voyageurs</label>
+                    <input type="number" id="voyageurs" name="voyageurs" min="1" value="1" required>
+                </div>
+                <div class="entrer">
+                    <button type="submit" class="bouton_recherche"><i class="fas fa-search"></i>  Rechercher</button>
+                </div>
+            </form>
+        </div>
+        <h2>Destination populaires</h2>
+        <section class="populaires">
+            <div class="destination" >
+                <a href="t7.html"><img src="/Images/conakry.jpeg" alt="image de Conakry"><span>Conakry</span></a>
+                <a href="t2.html"><img src="/Images/image de la tour Eiffel.jpg" alt="image tour eiffel"><span>Paris</span></a>
+                <a href="t6.html"><img src="/Images/La_Ville_de_Marrakech.jpg" alt="image marrakeck"><span>Marrakeck</span></a>
+                <a href="t4.html"><img src="/Images//Nouveau dossier/3yhvlakq002vemv1bnl502ll53xi.jpg" alt="image dubai"><span>Dubai</span></a>
+                <a href="t1.html"><img src="/Images/1314872-Lyon.jpg" alt="image Lyon"><span>Lyon</span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="pied"> 
+        <p>Suivez-nous sur les réseaux sociaux via :</p>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p><a href="formulaire.html" target="_blank" title="cliquer ici pour tout bésoin">contactez_nous</a></p>
+        <p>Tous droits réservés. <br>
+            © Copyright 2024 -TangamaChezToi.com™</p>
+    </footer>
+</body>
+</html>  

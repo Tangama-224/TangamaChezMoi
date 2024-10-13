@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangama Chez Toi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="/Icons/logo-png.png">   
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/formulaire.css">
+
+</head>
+<body> 
+    <header>
+        <nav class="navigation"> 
+            <ul>
+                <li><a href="main.html"> <i class="fas fa-home"></i>  Accueil</a></li>
+                <li><a href="hebergement.html"><i class="fas fa-bed"></i>  Hébergements</a></li>
+                <li><a href="propos.html"><i class="fas fa-info-circle"></i>  A propos</a></li>
+                <li><a href="formulaire.html">   <i class="fas fa-phone"></i>  Contact</a></li>
+                <li ><a href="compte.html" ><i class="fas fa fa-id-badge" id="badge"></i>  Mon compte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="contact">
+            <h2>Contactez-nous</h2>
+            <p>Vous avez un projet de location saisonnière ? Vous souhaitez en savoir plus sur nos offres ?<br>N'hésitez pas à nous contacter!</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+                 <input type="hidden" name="access_key" value="c6cebc24-2ba8-4964-9241-876dbf1e3bee">    
+                <div>
+                    <label for="name">Nom: </label><br>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="prenom">Prénom: </label><br>
+                    <input type="text" name="prenom" required>
+                </div>
+                <div>
+                    <label for="Email">Votre email: </label><br>
+                    <input type="email" name="Email" required>
+                </div>
+                <div>
+                    <label for="Téléphone">Téléphone: </label><br>
+                    <input type="tel" name="Téléphone" required>
+                </div>
+                <div>
+                    <label for="message">Message: </label><br>
+                    <textarea name="message" rows="10" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer" class="boutton">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pied">  
+        <p>Suivez-nous sur les réseaux sociaux via :</p>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p><a href="formulaire.html" target="_blank" title="cliquer ici pour tout bésoin">contactez_nous</a></p>
+        <p>Tous droits réservés. <br>
+            © Copyright 2024 -TangamaChezToi.com™</p>
+    </footer>
+</body>
+</html>  
