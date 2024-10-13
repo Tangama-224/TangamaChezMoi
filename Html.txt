@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories - Location Saisonnière</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="categorie.html">Catégories</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-categorie">
+        <h2>Catégories de Biens</h2>
+        <div class="grille-produits">
+            <div class="item-produit">
+                <a href="detail1.html">
+                    <img src="appartement1.jpg" alt="Appartement à Paris">
+                    <h3>Appartement à Paris</h3>
+                    <p>Un bel appartement avec vue sur la Tour Eiffel.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail2.html">
+                    <img src="maison1.jpg" alt="Maison en Ville">
+                    <h3>Maison en Ville</h3>
+                    <p>Maison confortable située au cœur de la ville.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail3.html">
+                    <img src="villa1.jpg" alt="Villa au Bord de la Mer">
+                    <h3>Villa au Bord de la Mer</h3>
+                    <p>Villa de luxe avec accès direct à la plage.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail4.html">
+                    <img src="studio1.jpg" alt="Studio à Lyon">
+                    <h3>Studio à Lyon</h3>
+                    <p>Charmant studio idéal pour un séjour romantique.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail5.html">
+                    <img src="cottage1.jpg" alt="Cottage à la Montagne">
+                    <h3>Cottage à la Montagne</h3>
+                    <p>Cottage chaleureux pour des vacances à la montagne.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail6.html">
+                    <img src="chalet1.jpg" alt="Chalet en Montagne">
+                    <h3>Chalet en Montagne</h3>
+                    <p>Chalet moderne avec vue imprenable sur les Alpes.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail7.html">
+                    <img src="loft1.jpg" alt="Loft Urbain">
+                    <h3>Loft Urbain</h3>
+                    <p>Loft élégant avec design contemporain.</p>
+                </a>
+            </div>
+            <div class="item-produit">
+                <a href="detail8.html">
+                    <img src="appartement2.jpg" alt="Appartement à Nice">
+                    <h3>Appartement à Nice</h3>
+                    <p>Appartement lumineux à quelques pas de la plage.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-categorie {
+    padding: 20px;
+    text-align: center;
+}
+
+.grille-produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item-produit {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item-produit:hover {
+    transform: scale(1.05);
+}
+
+.item-produit img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.item-produit h3 {
+    margin: 10px 0;
+}
+
+.item-produit p {
+    padding: 0 10px 10px;
+    color: #555;
+}
